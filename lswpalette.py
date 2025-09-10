@@ -16,7 +16,7 @@ except Exception:
 # ---------------- Constants ----------------
 MIN_COLS = 2
 MAX_COLS = 360
-APP_VERSION = "1.0"
+APP_VERSION = "0.1"
 
 # ---------------- Platform helpers ----------------
 @contextmanager
