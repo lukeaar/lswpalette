@@ -1,5 +1,7 @@
 import colorsys
 
+LIGHT_LUMINANCE_THRESHOLD = 140
+
 def hex_to_rgb_tuple(hex_color):
     """#RRGGBB -> (r, g, b)."""
     hex_color = hex_color.lstrip("#")
@@ -19,4 +21,4 @@ def is_light(hex_color):
     r = int(hex_color[1:3], 16)
     g = int(hex_color[3:5], 16)
     b = int(hex_color[5:7], 16)
-    return (0.299 * r + 0.587 * g + 0.114 * b) > 140
+    return (0.299 * r + 0.587 * g + 0.114 * b) > LIGHT_LUMINANCE_THRESHOLD
